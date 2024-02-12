@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aakash Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Aakash Coaching Institute Survey Form</h1>
+        <p id="description">Thank you for filling out survey form</p>
+    </div>
+    <form id="survey-form" action="https" method="post">
+        <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label">Age: <input id="number" type="number" placeholder="Enter your Age" min="6"
+                max="120" /></label>
+        <label id="dropdown-label">What is your class 12th stream? <select id="dropdown">
+                <option>Select One</option>
+                <option value="biology">Biology</option>
+                <option value="Mathmatics">Mathmatics</option>
+                <option value="commerce">Commerce</option>
+            </select></label>
+        <br>
+        <label id="radio-label"> What are you preparing for?
+            <label for="iit-jee"><input type="radio" id="iit-jee" name="target" value="IIT JEE" class="inline"
+                    checked>IIT JEE</label>
+            <label for="neet"><input type="radio" id="neet" name="target" value="NEET" class="inline">NEET</label>
+            <label for="cat"><input type="radio" id="CAT" name="target" value="CAT" class="inline">CAT</label>
+        </label>
+        <br>
+        <label id="checkbox">What are your strongest subjects?
+            <label for="chemistry"><input type="checkbox" id="chemistry" name="strong-subject" value="Chemistry"
+                    class="inline">Chemistry</label>
+            <label for="mathmatics"><input type="checkbox" id="mathmatics" name="strong-subject" value="Mathmatics"
+                    class="inline">Mathmatics</label>
+            <label for="biology"><input type="checkbox" id="biology" name="strong-subject" value="Biology"
+                    class="inline">Biology</label>
+            <label for="physics"><input type="checkbox" id="physics" name="strong-subject" value="Physics"
+                    class="inline">Physics </label>
+            <label for="commerce"><input type="checkbox" id="commerce" name="strong-subject" value="Commerce"
+                    class="inline">Commerce</label>
+            <br>
+            <label id="textarea">Any Comments or Suggestion? <textarea id="comment" name="comment" rows="3" cols="25"
+                    placeholder="Your suggestions shape our future..."></textarea></label>
+            <button id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
